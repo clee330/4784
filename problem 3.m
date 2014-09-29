@@ -15,14 +15,14 @@ t = 0:dt:Tmax; % Time vector
 I(1:numel(t)) = 5; %uA for all the time.
 
 % Constants
-gk = 36; % mS/c^2
-gna = 120; % mS/c^2
-gl = 0.3; % mS/c^2
-ek = -12; % mV
-ena = 115; % mV
-el = 10.6; % mV
-c = 1.0; % uF/c^2
-V = 0; % V
+gk = 36; % mS/c^2 maximum value of conductance of K
+gna = 120; % mS/c^2 maximum value of conductance of NA
+gl = 0.3; % mS/c^2 maximum value of conductacne of leakeage
+ek = -12; % mV Voltage for K
+ena = 115; % mV Voltage for Na
+el = 10.6; % mV Voltage for leakage
+c = 1.0; % uF/c^2 Membrane capacitance
+V = 0; % V Initial Voltage setted
 %Initial variabless
 %alpha= prob of gate close, beta= prob of gate open.
 alpha_n = 0.01*((10-V)/(exp((10-V)/10)-1)); %prob of gate close for k
